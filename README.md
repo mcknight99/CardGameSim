@@ -23,3 +23,30 @@ gameEngine.simulateRealGames(games=100, round_limit=15, players=4, characters_pe
 gameEngine.exportGameStatsToCsv()
 
 gameEngine.showSummary()
+
+
+
+Current plans/ideas:
+* 2-4 simulated players ranging from complete random moves to a strategy/bias to certain moves in a turn (action, tax, move card, atk) and what they prioritize where (and when?)
+
+* Record as MUCH data as we can 
+    * Card win rate
+    * Player strategy win rate
+    * Card ELO - which cards are more and less powerful
+    * what actions in a turn have a higher payoff
+
+* Hand class
+    * Func playCard -> how to avoid a big switch case?? Card class?
+    * Func addToActive
+    * Func addToSpecial 
+    * Func removeFromActive
+    * Func removeFromSpecial
+    * Array/ArrayList of current cards in hand
+    * 2 arrays: active & special
+
+* Card class?
+    * if yes, has benefits of having default values but being able to be edited by code from main
+
+* Player class
+    * contains Hand class
+    * int warBonds
